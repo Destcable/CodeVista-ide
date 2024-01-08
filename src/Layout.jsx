@@ -1,3 +1,4 @@
+import { MdOutlineChevronLeft, MdOutlineChevronRight } from "react-icons/md";
 
 const Layout = () => {
     return (
@@ -22,15 +23,24 @@ const Layout = () => {
                 className="p-3"
                 style={{ backgroundColor: '#151518', color: '#42424B' }}
             >
-                <span className="text-white">{"<"}</span>
-                <span className="ps-3">{">"}</span>
+                <span className="text-white">
+                    <MdOutlineChevronLeft size='20px'/>
+                </span>
+                <span className="ps-2">
+                    <MdOutlineChevronRight size='20px'/>
+                </span>
                 <span className="ps-4 pe-4">|</span>
             </div>
             <div
-                className="d-flex w-auto"
+                className="d-flex"
                 style={{ backgroundColor: '#151518' }}
             >
-                <div className="p-3 bg-danger rounded-3">Search code / files</div>
+                <div 
+                    className="p-3 rounded-3"
+                    style={{ backgroundColor: '#1E1E23', color: '#333237'}}
+                >
+                    Search code / files
+                </div>
             </div>
         </>
     )
