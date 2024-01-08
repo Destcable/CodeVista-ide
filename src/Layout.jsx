@@ -17,7 +17,7 @@ const Layout = () => {
                     <span>Help</span>
                 </div>
             </header>
-            <div className="border-bottom border-secondary"> </div>
+            <div className="border-bottom border-secondary"></div>
             <div
                 className="p-3"
                 style={{ backgroundColor: '#151518', color: '#42424B' }}
@@ -25,6 +25,12 @@ const Layout = () => {
                 <span className="text-white">{"<"}</span>
                 <span className="ps-3">{">"}</span>
                 <span className="ps-4 pe-4">|</span>
+            </div>
+            <div
+                className="d-flex w-auto"
+                style={{ backgroundColor: '#151518' }}
+            >
+                <div className="p-3 bg-danger rounded-3">Search code / files</div>
             </div>
         </>
     )
